@@ -10,6 +10,30 @@ Features:
 - **mocha for testing**
 
 
-Todo:
+#### Installation
+
+```bash
+% npm install
+```
+
+##### Tasks
+
+```bash
+# Build
+% npm run build
+
+# Production
+% npm run build:production
+
+# Watch
+% npm run watch
+
+# Test
+% npm test
+
+```
+
+#####Todo:
+
 - ~~Add development variables~~
 - ~~JS/CSS minification~~
