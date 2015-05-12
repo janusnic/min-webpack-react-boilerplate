@@ -1,0 +1,51 @@
+{
+  "rules": {
+    "indent": [2, 2],
+    "quotes": [2, "single", "avoid-escape"],
+    "no-console": false,
+    "jsx": true,
+    "global-strict":false,
+    "no-undef": false
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": true,
+    "jsx": true
+  },
+  "globals": {
+    "console": true,
+    "require": true,
+    "module": true,
+    "describe": true,
+    "it": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "before": true,
+    "after": true
+  },
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "eslint-plugin-react"
+  ]
+}

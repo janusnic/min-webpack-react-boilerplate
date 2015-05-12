@@ -1,0 +1,8 @@
+.DS_Store
+npm-debug.log
+
+# ignore build dir
+build
+
+# ignore node modules
+node_modules

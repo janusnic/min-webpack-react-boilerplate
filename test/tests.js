@@ -1,0 +1,2 @@
+require('./checkbox');
+require('./point');
