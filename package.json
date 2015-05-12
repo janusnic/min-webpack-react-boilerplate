@@ -7,10 +7,12 @@
     "clean": "rm -rf node_modules build",
     "preinstall": "npm run clean",
     "postinstall": "npm run build",
-    "build": "./node_modules/.bin/webpack",
-    "watch": "./node_modules/.bin/webpack --watch",
-    "pretest": "npm run build",
-    "test": "./node_modules/.bin/mocha-phantomjs test/index.html"
+    "build": "DEV=true ./node_modules/.bin/webpack -d",
+    "watch": "DEV=true ./node_modules/.bin/webpack --watch",
+    "watch:test": "./node_modules/.bin/webpack --watch --config webpack-config-test.js",
+    "test": "./node_modules/.bin/webpack --config webpack-config-test.js",
+    "posttest": "./node_modules/.bin/mocha-phantomjs test/index.html",
+    "build:production": "./node_modules/.bin/webpack -p"
   },
   "author": "Chris Buttery",
   "license": "ISC",

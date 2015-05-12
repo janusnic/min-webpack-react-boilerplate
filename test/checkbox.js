@@ -13,7 +13,7 @@ describe('Checkbox', function(){
   });
 
   it('CheckboxWithLabel: should exist', function () {
-    let el = checkbox.getDOMNode();
+    let el = React.findDOMNode(checkbox);
     assert.ok(el, 'I exist');
   });
 

@@ -6,3 +6,6 @@ build
 
 # ignore node modules
 node_modules
+
+# ignore test build
+test/build.js
