@@ -8,3 +8,8 @@ Features:
 - **eslint for linting**
 - **cssnext for transpiling CSS4+ to CSS3**
 - **mocha for testing**
+
+
+Todo:
+- ~~Add development variables~~
+- ~~JS/CSS minification~~
