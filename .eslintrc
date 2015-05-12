@@ -5,7 +5,21 @@
     "no-console": false,
     "jsx": true,
     "global-strict":false,
-    "no-undef": false
+    "no-undef": false,
+    "no-unused-vars": false,
+    "react/jsx-no-undef"      : true,
+    "react/jsx-quotes"        : true,
+    "react/jsx-sort-props"    : true,
+    "react/jsx-uses-react"    : true,
+    "react/jsx-uses-vars"     : true,
+    "react/no-did-mount-set-state"  : true,
+    "react/no-did-update-set-state" : true,
+    "react/no-multi-comp"     : true,
+    "react/no-unknown-property" : true,
+    "react/prop-types"        : true,
+    "react/react-in-jsx-scope": true,
+    "react/self-closing-comp" : true,
+    "react/wrap-multilines"   : true
   },
   "ecmaFeatures": {
     "arrowFunctions": true,
