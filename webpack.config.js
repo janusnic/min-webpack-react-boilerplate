@@ -1,15 +1,14 @@
-var path = require('path');
+var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+var DefineEnvironment = new webpack.DefinePlugin({
+  IsDevelopment: JSON.stringify(JSON.parse(process.env.DEV || 'false'))
+});
+
 module.exports = {
-  entry: {
-    build: './lib/boot/',
-    tests: './test/tests.js'
-  },
+  entry: './lib/boot/index.js',
   output: {
-    path: path.join(__dirname, './build'),
-    filename: "[name].js",
-    chunkFilename: "[name].js"
+    filename: './build/build.js'
   },
   module: {
     loaders: [
@@ -38,11 +37,15 @@ module.exports = {
       },
     ]
   },
+  resolve: {
+    extensions: ['', '.js', '.json', '.jsx']
+  },
   eslint: {
     failOnError: true,
     configFile: '.eslintrc'
   },
   plugins: [
-    new ExtractTextPlugin("[name].css")
+    new ExtractTextPlugin("./build/build.css"),
+    DefineEnvironment
   ]
 };
